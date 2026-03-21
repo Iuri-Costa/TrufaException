@@ -7,10 +7,13 @@
 <body>
     <div align="center">
         <h1>cadastro</h1>
-        <p><input type="text" name="username" placeholder="username"></p>
-        <p><input type="text" name="nome" placeholder="nome"></p>
-        <p><input type="email" name="email" placeholder="email"></p>
-        <p><input type="password" name="password" placeholder="password"></p>
+        <form action="/usuario/cadastro" method="post">
+            <p><input type="text" name="username" placeholder="username"></p>
+            <p><input type="text" name="nome" placeholder="nome"></p>
+            <p><input type="email" name="email" placeholder="email"></p>
+            <p><input type="password" name="password" placeholder="password"></p>
+            <button type="submit">Cadastrar</button>
+        </form>
     </div>
 </body>
 </html>

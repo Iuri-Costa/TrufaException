@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>olá</title>
+    <title>index</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
     <div align="center">
@@ -10,5 +11,6 @@
         <p>Olá, seja bem vindo</p>
         <a href="login">login</a> | <a href="cadastro">cadastro</a>
     </div>
+    <div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>

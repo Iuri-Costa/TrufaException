@@ -20,7 +20,7 @@ public class UsuarioController {
     @PostMapping("/cadastro")
     public String cadastrar(@ModelAttribute Usuario usuario) {
         usuarioService.criarUsuario(usuario.getName(), usuario.getEmail(), usuario.getPassword());
-        System.out.println("Usuário cadastrado: " + usuario.getEmail());
+        System.out.println("Usuário cadastrado:" + usuario.getId());
         return "redirect:/login";
     }
 }

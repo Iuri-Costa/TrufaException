@@ -20,4 +20,7 @@ public class UsuarioService {
         u.setPassword(password);
         return usuarioRepository.save(u);
     }
+    public Usuario buscarPorEmail(String email) {
+        return usuarioRepository.findByEmail(email);
+    }
 }

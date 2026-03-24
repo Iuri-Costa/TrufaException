@@ -8,9 +8,11 @@
 <body>
     <div align="center">
         <h1>login</h1>
-        <p><input type="text" name="email" placeholder="email"></p>
-        <p><input type="password" name="password" placeholder="password"></p>
-        <button type="submit">Entrar</button>
+        <form action="/usuario/login" method="post">
+            <p><input type="email" name="email" placeholder="email"></p>
+            <p><input type="password" name="password" placeholder="password"></p>
+            <p><button type="submit">Entrar</button></p>
+        </form>
     </div>
     <div th:replace="fragments/footer :: footer"></div>
 </body>

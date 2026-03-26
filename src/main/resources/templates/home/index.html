@@ -6,10 +6,10 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
+    <div th:replace="fragments/header :: header"></div>
     <div align="center">
         <h1>TrufaException</h1>
         <p>Olá, seja bem vindo</p>
-        <a href="login">login</a> | <a href="cadastro">cadastro</a>
     </div>
     <div th:replace="fragments/footer :: footer"></div>
 </body>

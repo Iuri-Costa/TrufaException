@@ -1,14 +1,37 @@
 html, body {
-  height: 100%;
-  margin: 0;
-}
+   height: 100%;
+   margin: 0;
+ }
 
 
-body {
-  display: flex;
-  flex-direction: column;
-}
+ body {
+   display: flex;
+   flex-direction: column;
+ }
 
-footer {
-  margin-top: auto;
-}
+ footer {
+   justify-content: center;
+   margin-top: auto;
+   display:flex;
+   align-items:center;
+ }
+
+ header {
+   color: #fff;
+ }
+
+ header {
+    background: #050505;
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #111;
+  }
+
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }

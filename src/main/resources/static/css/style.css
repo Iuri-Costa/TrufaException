@@ -1,37 +1,30 @@
-html, body {
-   height: 100%;
-   margin: 0;
- }
+body{
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("/img/TrufasFundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
+.center-content{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.red{
+    color: darkred;
+}
+.boot-body{
+background: black;
+height: 100vh;
+}
 
- body {
-   display: flex;
-   flex-direction: column;
- }
-
- footer {
-   justify-content: center;
-   margin-top: auto;
-   display:flex;
-   align-items:center;
- }
-
- header {
-   color: #fff;
- }
-
- header {
-    background: #050505;
-    color: #fff;
-    padding: 15px 20px;
-    border-bottom: 1px solid #111;
-  }
-
-  header a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  header a:hover {
-    text-decoration: underline;
-  }
+#terminal{
+color: #8B0000;
+padding: 20px;
+font-family: monospace;
+}

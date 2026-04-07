@@ -13,7 +13,12 @@ public class RotasController {
         return "auth/login";
     }
 
-    @GetMapping({"/", "/index"})
+    @GetMapping("/")
+    public String boot(){
+        return "home/boot";
+    }
+
+    @GetMapping({"/index"})
     public String index(HttpSession session, Model model) {
         Object usuario = session.getAttribute("usuarioLogado");
         model.addAttribute("logado", usuario != null);

@@ -14,10 +14,9 @@ public class RotasController {
     }
 
     @GetMapping("/")
-    public String boot(){
+    public String boot() {
         return "home/boot";
     }
-
     @GetMapping({"/index"})
     public String index(HttpSession session, Model model) {
         Object usuario = session.getAttribute("usuarioLogado");
